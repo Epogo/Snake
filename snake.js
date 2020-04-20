@@ -32,7 +32,7 @@ var y = new Array(ALL_DOTS);
 
 if(document.getElementById('start').innerHTML.clicked == true)
 {
-   document.getElementById('start').style.visibility = 'visible';
+   document.getElementById('start').style.visibility = 'hidden';
 }
 
 
