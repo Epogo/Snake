@@ -7,7 +7,7 @@ var inGame = true;
 const DOT_SIZE = 10;
 const ALL_DOTS = 900;
 const MAX_RAND = 29;
-const DELAY = 140;
+const DELAY=140;
 const C_HEIGHT = 300;
 const C_WIDTH = 300;    
 
@@ -17,7 +17,13 @@ const UP_KEY = 38;
 const DOWN_KEY = 40;
 
 var x = new Array(ALL_DOTS);
-var y = new Array(ALL_DOTS);   
+var y = new Array(ALL_DOTS);
+if(document.getElementById("easy").checked)
+    DELAY=500;
+if(document.getElementById("moderate").checked)
+    DELAY=200;
+if(document.getElementById("Hard").checked)
+    DELAY=100;
 
 function init() {
     
