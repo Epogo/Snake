@@ -1,14 +1,3 @@
-var canvas;
-var ctx;
-
-var head;
-var apple;
-var ball;
-
-var dots;
-var apple_x;
-var apple_y;
-
 var leftDirection = false;
 var rightDirection = true;
 var upDirection = false;
@@ -28,15 +17,7 @@ const UP_KEY = 38;
 const DOWN_KEY = 40;
 
 var x = new Array(ALL_DOTS);
-var y = new Array(ALL_DOTS);  
-var DELAY=170;
-/*
-if(document.getElementById("easy").checked)
-DELAY=500;
-if(document.getElementById("moderate").checked)
-DELAY=300;
-if(document.getElementById("Hard").checked)
-DELAY=150 */
+var y = new Array(ALL_DOTS);   
 
 function init() {
     
@@ -232,4 +213,4 @@ onkeydown = function(e) {
         rightDirection = false;
         leftDirection = false;
     }        
-};
+};  
