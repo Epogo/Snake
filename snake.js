@@ -1,4 +1,4 @@
-$(document).ready(function(){
+
 
 var canvas;
 var ctx;
@@ -221,4 +221,4 @@ onkeydown = function(e) {
         leftDirection = false;
     }        
 };
-    });
+
