@@ -18,7 +18,7 @@ const DOWN_KEY = 40;
 var x = new Array(ALL_DOTS);
 var y = new Array(ALL_DOTS);
 
-
+[lbl] start:
 function init() {
     
     canvas = document.getElementById('myCanvas');
@@ -91,7 +91,11 @@ function gameOver() {
     ctx.font = 'normal bold 18px serif';
     
     ctx.fillText('Game over', C_WIDTH/2, C_HEIGHT/2);
-}
+    ctx.fillText('If you want to play again press 'Y', C_WIDTH/2, C_HEIGHT/2);
+    document.addEventListener('keyup', (e) => {
+     if (e.code === "y")
+         [lbl] repeat: goto start;
+});
 
 function checkApple() {
 
