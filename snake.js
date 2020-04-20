@@ -30,10 +30,12 @@ const DOWN_KEY = 40;
 var x = new Array(ALL_DOTS);
 var y = new Array(ALL_DOTS);   
 
+
 function init() {
+    
     canvas = document.getElementById('myCanvas');
     ctx = canvas.getContext('2d');
-    
+
     loadImages();
     createSnake();
     locateApple();
@@ -101,7 +103,6 @@ function gameOver() {
     ctx.font = 'normal bold 18px serif';
     
     ctx.fillText('Game over', C_WIDTH/2, C_HEIGHT/2);
-
 }
 
 function checkApple() {
