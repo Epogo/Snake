@@ -32,7 +32,7 @@ const DOWN_KEY = 40;
 var x = new Array(ALL_DOTS);
 var y = new Array(ALL_DOTS);   
 
-$("#again").hide();
+
 
 function init() {
     
@@ -106,7 +106,7 @@ function gameOver() {
     ctx.font = 'normal bold 18px serif';
     
     ctx.fillText('Game over', C_WIDTH/2, C_HEIGHT/2);
-    $("#again").show();
+
 }
 
 function checkApple() {
