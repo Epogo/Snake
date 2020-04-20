@@ -1,3 +1,5 @@
+$(document).ready(function(){
+
 var canvas;
 var ctx;
 
@@ -30,7 +32,8 @@ const DOWN_KEY = 40;
 var x = new Array(ALL_DOTS);
 var y = new Array(ALL_DOTS);   
 
-
+$("#start").click(function(){
+$("#start").hide();});
 function init() {
     
     canvas = document.getElementById('myCanvas');
@@ -217,3 +220,4 @@ onkeydown = function(e) {
         leftDirection = false;
     }        
 };
+    });
