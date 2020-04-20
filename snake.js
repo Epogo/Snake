@@ -18,7 +18,6 @@ const DOWN_KEY = 40;
 var x = new Array(ALL_DOTS);
 var y = new Array(ALL_DOTS);
 
-[lbl] start:
 function init() {
     
     canvas = document.getElementById('myCanvas');
