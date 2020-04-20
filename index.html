@@ -14,7 +14,10 @@
     </canvas>
     <br>
     <div>
-
+    <button id="again" onclick="inGame = true;init();">Start Again</button>
+        <script type="text/javascript">
+      document.getElementById('again').style.display = 'none';      
+        </script>
         
    <button id="start" onclick="init();">Start</button>
         <script type="text/javascript">
@@ -23,15 +26,12 @@
 
     function hideshow() {
         document.getElementById('start').style.display = 'block'; 
-        this.style.display = 'none;'} 
-</script>
-    <button id="again" onclick="inGame = true;init();">Start Again</button>
-        <script type="text/javascript">
-      document.getElementById('again').style.display = 'none'; 
+        this.style.display = 'none';
             if(inGame==='false')
             document.getElementById('again').style.display = 'block'; 
-                
-        </script>
+    } 
+</script>
+
 
     </div>
 
