@@ -100,7 +100,6 @@ function gameOver() {
     ctx.textBaseline = 'middle'; 
     ctx.textAlign = 'center'; 
     ctx.font = 'normal bold 18px serif';
-    
     ctx.fillText('Game over', C_WIDTH/2, C_HEIGHT/2);
 }
 
@@ -173,9 +172,7 @@ function locateApple() {
 }    
 
 function gameCycle() {
-    
     if (inGame) {
-
         checkApple();
         checkCollision();
         move();
