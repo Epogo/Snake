@@ -16,6 +16,15 @@
     <br>
     <div>
    <button id="start" onclick="init();">Start</button>
+        <script type="text/javascript">
+    var button = document.getElementById('start')
+    button.addEventListener('click',hideshow,false);
+
+    function hideshow() {
+        document.getElementById('start').style.display = 'block'; 
+        this.style.display = 'none'
+    }   
+</script>
    <button id="again" onclick="inGame = true;init();">Start Again</button>
     </div>
 
