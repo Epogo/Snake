@@ -31,10 +31,6 @@ const DOWN_KEY = 40;
 
 var x = new Array(ALL_DOTS);
 var y = new Array(ALL_DOTS);   
-if(document.getElementById('start').clicked == true)
-{
-   alert("Game has been started!");
-}
 
 function init() {
     canvas = document.getElementById('myCanvas');
