@@ -30,13 +30,13 @@ const DOWN_KEY = 40;
 var x = new Array(ALL_DOTS);
 var y = new Array(ALL_DOTS);  
 var DELAY=170;
-
+/*
 if(document.getElementById("easy").checked)
 DELAY=500;
 if(document.getElementById("moderate").checked)
 DELAY=300;
 if(document.getElementById("Hard").checked)
-DELAY=150
+DELAY=150 */
 
 function init() {
     
