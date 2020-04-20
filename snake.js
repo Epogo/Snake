@@ -96,7 +96,7 @@ function doDrawing() {
 }
 
 function gameOver() {
-    
+    document.getElementById('again').style.display = 'block'; 
     ctx.fillStyle = 'white';
     ctx.textBaseline = 'middle'; 
     ctx.textAlign = 'center'; 
