@@ -35,7 +35,7 @@ var y = new Array(ALL_DOTS);
 var t = document.getElementById("start");
 
 function init() {
-    t.display="none";
+    t..style.visibility = 'hidden';
     canvas = document.getElementById('myCanvas');
     ctx = canvas.getContext('2d');
     
