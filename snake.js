@@ -90,13 +90,14 @@ function gameOver() {
     ctx.textAlign = 'center'; 
     ctx.font = 'normal bold 18px serif';
     
-    ctx.fillText('Game over If you want to play again press Y', C_WIDTH/2, C_HEIGHT/2);
+    ctx.fillText('Press Y', C_WIDTH/2, C_HEIGHT/2);
     
-    document.addEventListener('keyup', (e) => {
-     if (e.code === "y")
-         [lbl] repeat: goto start;
-});
-
+window.onkeyup = function(event) {
+    let key = event.key.toUpperCase();
+    if ( key == 'Y' ) {
+   [lbl] repeat: goto start;     
+    } 
+}
 function checkApple() {
 
     if ((x[0] == apple_x) && (y[0] == apple_y)) {
