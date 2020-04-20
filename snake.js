@@ -31,11 +31,12 @@ const DOWN_KEY = 40;
 
 var x = new Array(ALL_DOTS);
 var y = new Array(ALL_DOTS);   
-
-var t = document.getElementById("start");
+if(document.getElementById('start').clicked == true)
+{
+   alert("Game has been started!");
+}
 
 function init() {
-    t.style.visibility = 'hidden';
     canvas = document.getElementById('myCanvas');
     ctx = canvas.getContext('2d');
     
