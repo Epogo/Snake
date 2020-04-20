@@ -30,6 +30,11 @@ const DOWN_KEY = 40;
 var x = new Array(ALL_DOTS);
 var y = new Array(ALL_DOTS);   
 
+if(document.getElementById('start').innerHTML.clicked == true)
+{
+   alert("button was clicked");
+}
+
 
 function init() {
     
