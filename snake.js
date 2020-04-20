@@ -25,8 +25,6 @@ if(document.getElementById("moderate").checked)
 if(document.getElementById("Hard").checked)
     DELAY=100;
 
-function start(){
-
 function init() {
     
     canvas = document.getElementById('myCanvas');
@@ -222,4 +220,4 @@ onkeydown = function(e) {
         leftDirection = false;
     }        
 };  
-}
+
