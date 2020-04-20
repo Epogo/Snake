@@ -18,12 +18,6 @@ const DOWN_KEY = 40;
 var x = new Array(ALL_DOTS);
 var y = new Array(ALL_DOTS);
 var DELAY=140;
-if(document.getElementById("easy").checked)
-    DELAY=500;
-if(document.getElementById("moderate").checked)
-    DELAY=200;
-if(document.getElementById("Hard").checked)
-    DELAY=100;
 
 function init() {
     
