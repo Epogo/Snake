@@ -1,5 +1,3 @@
-
-
 var canvas;
 var ctx;
 
