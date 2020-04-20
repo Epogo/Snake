@@ -35,10 +35,10 @@ var y = new Array(ALL_DOTS);
 $("#again").hide();
 
 function init() {
-    $("#start").hide();
+    
     canvas = document.getElementById('myCanvas');
     ctx = canvas.getContext('2d');
-
+    
     loadImages();
     createSnake();
     locateApple();
