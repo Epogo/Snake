@@ -90,8 +90,8 @@ function gameOver() {
     ctx.textAlign = 'center'; 
     ctx.font = 'normal bold 18px serif';
     
-    ctx.fillText('Game over', C_WIDTH/2, C_HEIGHT/2);
-    ctx.fillText('If you want to play again press 'Y', C_WIDTH/2, C_HEIGHT/2);
+    ctx.fillText('Game over If you want to play again press Y', C_WIDTH/2, C_HEIGHT/2);
+    
     document.addEventListener('keyup', (e) => {
      if (e.code === "y")
          [lbl] repeat: goto start;
