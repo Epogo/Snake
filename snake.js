@@ -90,13 +90,8 @@ function gameOver() {
     ctx.textAlign = 'center'; 
     ctx.font = 'normal bold 18px serif';
     
-    ctx.fillText('Press Y', C_WIDTH/2, C_HEIGHT/2);
-    
-window.onkeyup = function(event) {
-    let key = event.key.toUpperCase();
-    if ( key == 'Y' ) {
-   [lbl] repeat: goto start;     
-    } 
+    ctx.fillText('Game Over', C_WIDTH/2, C_HEIGHT/2);
+   
 }
 function checkApple() {
 
