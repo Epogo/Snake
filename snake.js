@@ -19,7 +19,7 @@ var inGame=true;
 
 const Dot_size=10;
 const All_Dots=1600;
-const MAX_RAND=50;
+const MAX_RAND=29;
 
 const C_HEIGHT=400;
 const C_WIDTH=400;
@@ -65,8 +65,8 @@ function GenerateSnake(){
   
   dots=3;
   for (var i=0;i<dots;i++){
-    x[i]=70-i*10;
-    y[i]=70;
+    x[i]=50-i*10;
+    y[i]=50;
   }
   
 }
