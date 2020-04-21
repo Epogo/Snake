@@ -28,7 +28,8 @@ const UP_KEY = 38;
 const DOWN_KEY = 40;
 
 var x = new Array(ALL_DOTS);
-var y = new Array(ALL_DOTS);   
+var y = new Array(ALL_DOTS);
+var score=0;
 
 
 function init() {
@@ -69,6 +70,7 @@ function checkApple() {
     if ((x[0] == apple_x) && (y[0] == apple_y)) {
 
         dots++;
+        score++;
         locateApple();
     }
 }    
