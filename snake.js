@@ -29,7 +29,6 @@ const DOWN_KEY = 40;
 
 var x = new Array(ALL_DOTS);
 var y = new Array(ALL_DOTS);
-var score=0;
 
 
 function init() {
@@ -108,8 +107,8 @@ function gameOver() {
 function checkApple() {
 
     if ((x[0] == apple_x) && (y[0] == apple_y)) {
-
         dots++;
+        document.getElementById('result').innerHTML=dots;
         locateApple();
     }
 }
