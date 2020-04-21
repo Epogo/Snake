@@ -34,7 +34,7 @@ var y = new Array(ALL_DOTS);
 
 function init() {
     score=0;
-    document.getElementById('score').innerHTML=score;
+    document.getElementById('score').innerHTML=0;
     canvas = document.getElementById('myCanvas');
     ctx = canvas.getContext('2d');
 
