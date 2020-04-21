@@ -18,6 +18,15 @@
         <script type="text/javascript">
       document.getElementById('again').style.display = 'none';      
         </script>
+                <script type="text/javascript">
+    var button = document.getElementById('again')
+    button.addEventListener('click',hideshow,false);
+
+    function hideshow() {
+        document.getElementById('again').style.display = 'block'; 
+        this.style.display = 'none'; 
+    } 
+</script>
         
    <button id="start" onclick="init();">Start</button>
         <script type="text/javascript">
