@@ -8,6 +8,7 @@ var ball;
 var dots;
 var apple_x;
 var apple_y;
+var score=0;
 
 var leftDirection = false;
 var rightDirection = true;
@@ -108,7 +109,8 @@ function checkApple() {
 
     if ((x[0] == apple_x) && (y[0] == apple_y)) {
         dots++;
-        document.getElementById('score')=dots;
+        score++;
+        document.getElementById('score').innerHTML=score;
         locateApple();
     }
 }
