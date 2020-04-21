@@ -90,7 +90,7 @@ function doDrawing() {
             }
         }    
     } else {
-
+        document.getElementById('again').innerHTML.style.display = 'block';
         gameOver();
     }        
 }
