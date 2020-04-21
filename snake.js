@@ -108,7 +108,7 @@ function checkApple() {
 
     if ((x[0] == apple_x) && (y[0] == apple_y)) {
         dots++;
-        document.getElementById('result').innerHTML=dots;
+        document.getElementById('score').innerHTML=dots;
         locateApple();
     }
 }
